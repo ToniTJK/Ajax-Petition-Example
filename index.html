@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GET & POST FORM</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="./styles.css">
+
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script src="index.js"></script>
+	<script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+	<!-- onsubmit="onSubmit();return false;" -->
+	<div class="container">
+		<!-- (M6)/UF4. Comunicació asíncrona client-servidor -->
+		<div class="row">
+			<div class="col s12">
+				<h5><strong>(M6)/UF4. C.A. client-servidor - Activitat 2 Peticiones Post & Get </strong></h5>
+			</div>
+		</div> <!-- ROW -->
+		<div class="row">
+			<form id="theForm" onsubmit="onSubmit();return false;">
+				<div class="col s6 input-field">
+					<i class="material-icons prefix">person</i>
+					<label class="active" for="name">Nombre: </label>
+					<input class="active" id="name" type="text" name="name" required>
+					<div id="name_validate"></div> 
+				</div>
+				<div class="col s6 input-field">
+					<i class="material-icons prefix">email</i>
+					<label class="active" for="email">Email:</label>
+					<input class="active" id="email" type="email" name="email" required>
+					<div id="email_validate"></div>
+				</div>
+		</div> <!-- ROW -->
+		<div class="row">
+			<div class="col s12 input-field" >
+					<i class="material-icons prefix">menu</i>
+				<label class="active" for="depa">Mètodo de la petición:</label>
+				<select class="active" name="depa" id="depa" required>
+					<option value="default" disabled selected>Selecciona un Métode:</option>
+					<option value="get">Get</option>
+					<option value="post">Post</option>
+				</select>
+				<div id="depa_validate"></div>
+			</div>
+		</div> <!-- ROW -->
+		<div class="row">
+			<div class="col s12" >
+				<button class="btn waves-effect waves-light right" type="submit" name="action" >
+					<!-- onclick="onSubmit();return false;" -->
+					Submit
+					<i class="material-icons right">send</i>
+				</button>
+			</div>
+			</form> <!-- FORM -->
+		</div>
+
+
+		<div id="resposta" class="col s12"></div>
+
+	</div> <!-- container -->
+
+	<!-- Modal Structure -->
+	<div class="modal" id="alertModal">
+		<div class="modal-content lighten-2">
+			<h4>Alerta!</h4>
+			<p>Tienes que elegir un mètodo de envio y rellenar todos los campos antes de enviar!</p>
+		</div>
+		<div class="modal-footer lighten-3">
+			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+		</div>
+	</div>
+</body>
+
+</html>
