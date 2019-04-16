@@ -1,7 +1,7 @@
 # DESCRIPTION # ENGLISH
-Actitivity with Javascript + jQuery Validation and Materialize Framework:
+Actitivity with Javascript + jQuery Validation, Materialize Framework and PHP:
 
-Objective: Do Ajax Petition via GET or Post Methods and validate form.
+Objective: Do Ajax Petition via GET or Post Methods and validate form. PHP for Backend.
 
 - Frontend Framework: https://materializecss.com/ 
 
@@ -12,7 +12,7 @@ Objective: Do Ajax Petition via GET or Post Methods and validate form.
 # DESCRIPCIÓN # SPANISH / ESPAÑOL
 Práctica con Javascript + jQuery Validation i Materialize Framework:
 
-Objetivo: Hacer una petición via GET o Post i validar formulario antes de enviar.
+Objetivo: Hacer una petición via GET o Post i validar formulario antes de enviar. PHP para backend.
 
 - Frontend Framework: https://materializecss.com/
 
